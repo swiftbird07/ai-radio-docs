@@ -157,6 +157,30 @@ The previous track was <prev_songinfo> and the next track is <next_songinfo>.
 Create a natural radio transition that connects both songs and keeps it concise.
 ```
 
+## Sharing a show
+
+A show can be handed to someone else as a small JSON document.
+
+To share one, open the show's `⋯` menu and choose **Share…**. The dialog shows the document; use
+**Copy JSON** to put it on the clipboard or **Download .json** to save it as a file.
+
+To import one, choose **New show** and switch to **Import a shared show**. Paste the document or load
+the `.json` file, pick a source playlist from your own library, and create the show as usual.
+
+What travels: the show name, the host and program instructions, and every segment with its prompt,
+web search mode, character limit and timing rule.
+
+What does not: the source playlist, the default playback device, and the advanced settings. Those are
+specific to the instance the show came from, so the importer picks their own playlist and the
+advanced settings start at their defaults.
+
+:::caution[Only import shows from someone you trust]
+The prompts in a shared show are instructions written by whoever shared it, and they are sent to your
+AI provider along with the values AI Radio substitutes into them — your weather location, your local
+time and the tracks being played. A segment with web search enabled can cause that information to
+leave your network. Read the prompts before importing a show from a stranger.
+:::
+
 ## Advanced settings
 
 | Setting | Default | Description |
